@@ -1,0 +1,32 @@
+<h2 mat-dialog-title *ngIf="data === 1">Add Category</h2>
+<h2 mat-dialog-title *ngIf="data === 2">Edit Category</h2>
+
+<mat-dialog-content class="mat-typography">
+  <div class="mb-20" fxFlex fxLayout="row" fxLayout.lt-md="column">
+    <div fxFlex>
+      <mat-card-content>
+        <mat-form-field fxFlexFill>
+          <input matInput placeholder="Category Name">
+        </mat-form-field>
+      </mat-card-content>
+    </div>
+  </div>
+  <div class="mb-20" fxFlex fxLayout="row" fxLayout.lt-md="column">
+    <div fxFlex>
+      <mat-card-content>
+        <mat-form-field fxFlexFill>
+          <input matInput placeholder="Category Description">
+        </mat-form-field>
+      </mat-card-content>
+    </div>
+  </div>
+  <div class="mb-20" fxFlex fxLayout="row" fxLayout.lt-md="column">
+    <mat-slide-toggle>
+      Publish
+    </mat-slide-toggle>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Add</button>
+</mat-dialog-actions>

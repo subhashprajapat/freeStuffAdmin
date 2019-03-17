@@ -1,0 +1,8 @@
+
+<div mat-dialog-content>
+  <p>Are you sure want to delete this category?</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Yes</button>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+</div>
